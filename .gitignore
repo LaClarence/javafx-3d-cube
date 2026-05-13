@@ -1,0 +1,15 @@
+# Build outputs
+build/
+out/
+
+# Gradle cache
+.gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.DS_Store
