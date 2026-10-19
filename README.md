@@ -1,6 +1,6 @@
 # One Formula That Demystifies 3D Graphics
 
-This is a JavaFX 26 port of the project from the YouTuber Tsoding's video
+This is a JavaFX 27 port of the project from the YouTuber Tsoding's video
 [One Formula That Demystifies 3D Graphics](https://www.youtube.com/watch?v=qjWkNZ0SXfo&t=7s)
 
 The purpose is to render a simple 3D perspective projection (x/z, y/z) of a wireframe cube rotating on the Y axis.
@@ -13,14 +13,11 @@ References:
 ## Javascript to Java port
 
 To replace the browser, the following framework has been used: 
-- Java 26
-- JavaFX 26
-- Gradle 9.5.1 (updated with ./gradlew wrapper --gradle-version 9.5.1)
+- Java 27
+- JavaFX 27
+- Gradle 9.8.1 (updated with ./gradlew wrapper --gradle-version 9.8.1)
 
 The Javascript code is provided at the end of the file.
-
-Improvements:
- - Use [JEP 468](https://openjdk.org/jeps/468) when available
 
 ## Run
 
@@ -44,7 +41,7 @@ Produces a launch script and all JARs under `build/install/`:
 
 ```bash
 ./gradlew installDist
-./build/install/javafx26-canvas2d-starter/bin/javafx26-canvas2d-starter
+./build/install/javafx-3d-cube/bin/javafx-3d-cube
 ```
 
 ### Self-contained native application (no Java required)
@@ -58,11 +55,13 @@ open build/jpackage/CubeDemo.app
 
 To generate a `.dmg` installer (drag-and-drop), change `build.gradle`:
 
-```groovy
+```
+'--type', 'app-image',
+by
 '--type', 'dmg',
 ```
 
-## Javascript code
+## The JS code presented
 
 Here the html code
 ```html

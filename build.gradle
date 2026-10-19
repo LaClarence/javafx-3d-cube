@@ -12,12 +12,12 @@ repositories {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(26)
+        languageVersion = JavaLanguageVersion.of(27)
     }
 }
 
 javafx {
-    version = "26"
+    version = "27"
     modules = [ 'javafx.controls', 'javafx.graphics' ]
 }
 
